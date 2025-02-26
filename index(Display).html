@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Example</title>
+  <style>
+    /* Block Example */
+    .block {
+      display: block;
+      width: 100%;
+      height: 50px;
+      background-color: lightblue;
+      margin-bottom: 10px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    /* Inline Example */
+    .inline {
+      display: inline;
+      background-color: lightgreen;
+      padding: 10px;
+      margin-right: 10px;
+      text-align: center;
+    }
+
+    /* Inline-block Example */
+    .inline-block {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      background-color: lightpink;
+      margin-right: 10px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    /* Flex Example */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      background-color: lightcoral;
+      padding: 10px;
+    }
+
+    .flex-item {
+      width: 30%;
+      background-color: lightyellow;
+      padding: 10px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    /* Inline-flex Example */
+    .inline-flex-container {
+      display: inline-flex;
+      background-color: lightgrey;
+      padding: 10px;
+    }
+
+    .inline-flex-item {
+      width: 30%;
+      background-color: lightseagreen;
+      padding: 10px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    /* None Example */
+    .none {
+      display: none;
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    /* Grid Example */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      background-color: lightgrey;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: lightgreen;
+      padding: 20px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    /* Inline-grid Example */
+    .inline-grid-container {
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      background-color: lightcyan;
+      padding: 10px;
+    }
+
+    .inline-grid-item {
+      background-color: lightpink;
+      padding: 20px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    /* List-item Example */
+    .list-item-container {
+      display: list-item;
+      list-style-type: disc;
+      margin-left: 20px;
+      background-color: lightgoldenrodyellow;
+      padding: 10px;
+    }
+
+    /* Table Example */
+    .table-container {
+      display: table;
+      width: 100%;
+      background-color: lightpink;
+    }
+
+    .table-row {
+      display: table-row;
+    }
+
+    .table-cell {
+      display: table-cell;
+      padding: 10px;
+      background-color: lightblue;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Block Example:</h2>
+  <div class="block">This is a block element</div>
+  <p>The block element takes up the full width and starts on a new line.</p>
+
+  <h2>Inline Example:</h2>
+  <span class="inline">Inline 1</span>
+  <span class="inline">Inline 2</span>
+  <p>The inline elements appear next to each other without breaking the line.</p>
+
+  <h2>Inline-block Example:</h2>
+  <span class="inline-block">Inline-block 1</span>
+  <span class="inline-block">Inline-block 2</span>
+  <p>The inline-block elements behave like inline elements, but you can set width and height.</p>
+
+  <h2>Flex Example:</h2>
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+  <p>The flexbox layout creates a flexible layout with equally spaced items.</p>
+
+  <h2>Inline-flex Example:</h2>
+  <div class="inline-flex-container">
+    <div class="inline-flex-item">Item 1</div>
+    <div class="inline-flex-item">Item 2</div>
+    <div class="inline-flex-item">Item 3</div>
+  </div>
+  <p>The inline-flex layout behaves like flex, but the container behaves like an inline element.</p>
+
+  <h2>None Example:</h2>
+  <div class="none">This element will not be displayed.</div>
+  <p>The element with <code>display: none</code> is not shown on the page and takes up no space.</p>
+
+  <h2>Grid Example:</h2>
+  <div class="grid-container">
+    <div class="grid-item">Grid Item 1</div>
+    <div class="grid-item">Grid Item 2</div>
+    <div class="grid-item">Grid Item 3</div>
+  </div>
+  <p>The grid layout creates a 3-column structure where each grid item takes up equal space.</p>
+
+  <h2>Inline-grid Example:</h2>
+  <div class="inline-grid-container">
+    <div class="inline-grid-item">Grid Item 1</div>
+    <div class="inline-grid-item">Grid Item 2</div>
+    <div class="inline-grid-item">Grid Item 3</div>
+  </div>
+  <p>The inline-grid layout works like grid but behaves like an inline element.</p>
+
+  <h2>List-item Example:</h2>
+  <div class="list-item-container">This is a list-item styled div</div>
+  <p>The div styled as a list-item will behave like a list item with a bullet.</p>
+
+  <h2>Table Example:</h2>
+  <div class="table-container">
+    <div class="table-row">
+      <div class="table-cell">Cell 1</div>
+      <div class="table-cell">Cell 2</div>
+      <div class="table-cell">Cell 3</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell">Cell 4</div>
+      <div class="table-cell">Cell 5</div>
+      <div class="table-cell">Cell 6</div>
+    </div>
+  </div>
+  <p>This container uses <code>display: table</code> with rows and cells styled accordingly.</p>
+
+</body>
+</html>
