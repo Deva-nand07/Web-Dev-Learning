@@ -1,0 +1,53 @@
+* {
+  color: white;
+  background-color: tan;
+  padding: 0px;
+  margin: 0px;
+}
+#black {
+  height: 60px;
+  background-color: #0f1111;
+}
+span {
+  color: #f08804;
+  background-color: black;
+  font-size: 25px;
+}
+a {
+  margin-left: 200px;
+  margin-right: 200px;
+  text-decoration: none;
+  background-color: black;
+}
+input {
+  background-color: white;
+  color: black;
+}
+button {
+  background-color: #f08804;
+}
+main{
+    height: 800px;
+}
+main > div {
+  height: 100px;
+  width: 100px;
+  color: black;
+  border: 2px solid black;
+  margin: 10px;
+  opacity: 0.5;
+}
+#div1{
+    background-color: aqua;
+}
+#div2{
+    background-color: yellow;
+}
+#div3{
+    background-color: pink;
+}
+footer {
+    height: 75px;
+    background-color: black;
+  text-align: center;
+}
