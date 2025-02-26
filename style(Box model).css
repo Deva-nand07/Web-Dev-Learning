@@ -1,0 +1,83 @@
+* {
+  background-color: rgb(39, 10, 53);
+  color: white;
+}
+
+a[href] {
+  color: rgb(20, 162, 233);
+}
+a:hover::after {
+  content: " click!";
+  font-size: larger;
+  color: red;
+}
+.heading {
+  color: lawngreen;
+}
+
+h1::before {
+  content: "★ ";
+  color: gold;
+}
+
+h1::after {
+  content: "★ ";
+  color: gold;
+}
+::selection {
+  background-color: thistle;
+}
+button {
+  color: red;
+  background-color: tan;
+  opacity: 0.5;
+}
+hr {
+  border: 2px solid aquamarine;
+}
+#RGBA {
+  background-color: rgba(253, 232, 0, 0.5);
+}
+#HSLA {
+  background-color: hsla(120, 100%, 50%, 0.3);
+}
+#hex {
+  color: #ffaa0f;
+}
+H1{
+  text-align: center;
+  text-decoration: cyan underline dashed;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4), -2px -2px 3px rgba(255, 0, 0, 0.7);
+
+}
+a{
+  text-decoration: none;
+}
+h3{
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#p1{
+  font-family: cursive;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+footer{
+  text-align: center;
+}
+div{
+  font-weight: bolder;
+  background-color: #ffaa0f;
+  color: crimson;
+  height: 100px;
+  width: 300px;
+  border: 2px solid lawngreen ;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 15px;
+  margin-right: 200px;
+  display: inline-block;
+}
