@@ -1,0 +1,39 @@
+* {
+  text-align: center;
+  font-weight: bold;
+}
+.container {
+  height: 75vh;
+  width: 85vw;
+  border: 2px solid black;
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "main article side"
+    "footer footer footer";
+  margin: auto;
+}
+.items {
+  color: white;
+  border: 2px solid black;
+}
+#item1 {
+  grid-area: nav;
+  background-color: blue;
+}
+#item2 {
+  grid-area: main;
+  background-color: rgb(232, 198, 10);
+}
+#item3 {
+  grid-area: article;
+  background-color: green;
+}
+#item4 {
+  grid-area: side;
+  background-color: red;
+}
+#item5 {
+  grid-area: footer;
+  background-color: rgb(67, 67, 67);
+}
