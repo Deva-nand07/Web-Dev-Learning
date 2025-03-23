@@ -1,12 +1,20 @@
-nav ul li {
-  list-style: devanagari;
-  /* list-style: none; */
-  list-style-type: "🤖";
-  font-weight: bolder;
-  background-color: aqua;
+* {
+  text-align: center;
+}
+.container {
+  height: 70vh;
+  width: 50vw;
+  margin: auto;
   border: 2px solid black;
-  /* list-style: circle inside
-    url(https://imgs.search.brave.com/SDO9tN50hX63WqPcGJmkODXVaEHAX_tTJWlzPi0xXYQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91c2Fn/aWYuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9naWZzL2Nhci1k/cml2aW5nLTYxLmdp/Zg.gif); */
-  list-style-position: inside;
-  /* list-style-image: url(https://imgs.search.brave.com/SDO9tN50hX63WqPcGJmkODXVaEHAX_tTJWlzPi0xXYQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91c2Fn/aWYuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9naWZzL2Nhci1k/cml2aW5nLTYxLmdp/Zg.gif); */
+  overflow: auto;
+  /* overflow: visible; default value */
+  /* white-space: nowrap;
+  text-overflow: ellipsis; */
+
+  /* Writing This  */
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* or */
+  overflow: auto hidden;
+  /* Samething */
 }
