@@ -1,44 +1,12 @@
-* {
-  text-align: center;
-  font-weight: bold;
-}
-.container {
-  height: 75vh;
-  width: 85vw;
-  background-color: lightsalmon;
+nav ul li {
+  list-style: devanagari;
+  /* list-style: none; */
+  list-style-type: "🤖";
+  font-weight: bolder;
+  background-color: aqua;
   border: 2px solid black;
-  display: grid;
-  grid-template-columns: repeat(2, 30%) auto;
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-  grid-template-rows: repeat(2, 1fr) 20%;
-  /* grid-template-rows: repeat(100px, auto); */
-  /* grid-gap: 3%; */
-  gap: 5% 3%;
-  /* grid-auto-rows: 0; This is will remove overflowen content from grid row*/
-  margin: auto;
-  justify-items: center;
-  align-items: center;
-  /* place-content: center; */
-}
-.items {
-  height: 80%;
-  width: 80%;
-  background-color: rgb(0 46 255);
-  color: white;
-  border: 2px solid black;
-}
-#item3 {
-  /* Do  */
-  /* grid-row-start: 1;
-  grid-row-end: 3; */
-  /* or */
-  grid-row: 1/3;
-  /* samething */
-  grid-column: 3/4;
-  justify-self: flex-end;
-  align-self: flex-start;
-}
-#item5 {
-  grid-row: 1/2;
-  grid-column: 1/2;
+  /* list-style: circle inside
+    url(https://imgs.search.brave.com/SDO9tN50hX63WqPcGJmkODXVaEHAX_tTJWlzPi0xXYQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91c2Fn/aWYuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9naWZzL2Nhci1k/cml2aW5nLTYxLmdp/Zg.gif); */
+  list-style-position: inside;
+  /* list-style-image: url(https://imgs.search.brave.com/SDO9tN50hX63WqPcGJmkODXVaEHAX_tTJWlzPi0xXYQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91c2Fn/aWYuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9naWZzL2Nhci1k/cml2aW5nLTYxLmdp/Zg.gif); */
 }
