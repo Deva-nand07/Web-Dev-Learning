@@ -1,0 +1,33 @@
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+.container {
+  border: 2px solid black;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 50%;
+  width: 50%;
+  background-color: blue;
+
+  /* transform: rotate(90deg);  */
+  /* or */
+  /* transform: rotate(0.25turn); */
+
+  /* transform: scale(1.5); */
+
+  /* transform: skew(30deg, 20deg); */
+
+  /* transform: translate(50px, 100px); */
+
+  /* transform-origin: -0%, -0; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
