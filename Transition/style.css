@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 90vw;
+  border: 2px solid black;
+  margin: auto;
+}
+#fan {
+  width: 350px; /* Set the width of the circle */
+  height: 350px; /* Set the height to match the width */
+  border-radius: 50%; /* Makes it a circle */
+  overflow: hidden; /* Hides anything outside the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fan img {
+  object-fit: cover;
+  transition-property: transform;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transition-delay: 0.5s;
+  /* transition shorthand */
+  transition: transform 3s linear 50ms; /* Move transition here */
+}
+#fan:hover img {
+  transform: rotate(5turn);
+}
