@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: bounce 1s ease-out 2ms infinite alternate, move 2.7s linear 2ms infinite;
+            border: 2px solid black;
+        }
+
+        .container {
+            position: relative;
+            height: 90vh;
+            width: 95vw;
+            background-color: blue;
+            margin: auto;
+            border: 5px solid black;
+        }
+
+        @keyframes bounce {
+            0% {
+                bottom: 0;
+            }
+
+            100% {
+                bottom: 60%;
+            }
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+
+            30% {
+                left: 25%;
+            }
+
+            70% {
+                left: 65%;
+            }
+
+            100% {
+                left: 92.5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+        </div>
+    </div>
+</body>
+
+</html>
