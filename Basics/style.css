@@ -1,0 +1,187 @@
+/* External CSS */
+
+* {
+  /* Universal selector */
+  background-color: rgb(39, 10, 53); /* RGB system */
+  color: white;
+}
+
+#Heading2 {
+  color: white;
+}
+.heading,
+.head {
+  color: lawngreen;
+}
+.heading::before,
+.heading::after {
+  content: "★ ";
+  color: gold;
+}
+.heading {
+  text-align: center;
+  text-decoration: cyan underline dashed;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4),
+    -2px -2px 3px rgba(255, 0, 0, 0.7);
+}
+h3 {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#li2 {
+  /* Id selector */
+  color: lawngreen;
+  background-color: white;
+}
+hr {
+  /*Type selector */
+  border: 2px solid cyan;
+}
+.Menu {
+  color: yellow;
+}
+input[type="text"] {
+  /*  Attribute selector */
+  border: 2px solid black;
+  color: yellow;
+}
+/* pseudo Selector */
+a:hover {
+  /* Pseudo Classes */
+  color: blue;
+}
+.Menu::before {
+  /* Psedo Elements */
+  content: "👉 ";
+}
+table > caption {
+  /* Child Selector */
+  color: cyan;
+  font-size: larger;
+}
+table th,
+td {
+  /* Descendant Selector */
+  color: yellow;
+  font: 10;
+}
+table,
+th,
+td {
+  /* Adding Lines and Border to Table */
+  border: 2px solid white;
+  padding: 8px; /* Adds space inside cells */
+  border-collapse: collapse; /* Prevents double borders */
+}
+article + pre {
+  /* Adjacent Sibling Selector */
+  font-weight: bold;
+  font-style: italic;
+}
+
+aside ~ p {
+  /* General Sibling Selector */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: blue;
+}
+
+a[href] {
+  /* Color Property */
+  color: rgb(20, 162, 233);
+}
+
+a:hover::after {
+  content: " click!";
+  font-size: larger;
+  color: red;
+}
+a {
+  /* To remove Underline from <a>  */
+  text-decoration: none;
+}
+
+#RGBA {
+  background-color: rgba(253, 232, 0, 0.5);
+}
+#HSLA {
+  background-color: hsla(120, 100%, 50%, 0.3);
+}
+#hex {
+  color: #ffaa0f;
+}
+#footer {
+  text-align: center;
+}
+
+::selection {
+  /* Changes Color of Selection when User Selects */
+  background-color: powderblue;
+}
+button {
+  color: red;
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+#p1 {
+  font-family: cursive;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.box {
+  font-weight: bolder;
+  background-color: #ffaa0f;
+  color: crimson;
+  height: 100px;
+  width: 300px;
+  border: 2px solid lawngreen;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 15px;
+  margin-right: 200px;
+  display: inline-block;
+}
+
+.Positioning {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  color: black;
+  border: 2px solid aqua;
+}
+#Static {
+  background-color: burlywood;
+  position: static;
+  /* top, left, right, bottom and z-index properties will not worrk */
+}
+#Relative {
+  background-color: lawngreen;
+  position: relative;
+  /* top, left, right, bottom and z-index properties will worrk */
+  top: 10px;
+  left: 5px;
+  right: auto;
+}
+#Absolute {
+  background-color: aliceblue;
+  position: absolute;
+  left: 700px;
+}
+#Fixed {
+  background-color: darkorchid;
+  position: fixed;
+  bottom: 80px;
+  right: 450px;
+  opacity: 0.5;
+}
+#Sticky {
+  background-color: darkseagreen;
+  position: sticky;
+  bottom: 10px;
+  opacity: 0.7;
+}
