@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.container {
+  height: 95vh;
+  width: 5vw;
+  border: 2px solid black;
+  background-color: black;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#loader {
+  /* animation-name: Forward;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.2, 0, 1, 0.7);
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running; */
+  /* or */
+  animation: Forward 6s ease-in 0.5s infinite normal;
+}
+#loader img {
+  height: 10vh;
+  width: 10vw;
+  filter: contrast(450%);
+}
+@keyframes Forward {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
