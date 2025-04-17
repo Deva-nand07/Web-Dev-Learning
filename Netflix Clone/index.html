@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online Clone using HTML and CSS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="bg"></div>
+
+    <header>
+        <nav>
+            <span>
+                <img width="150" src="assets/logo.svg" alt="Netflix Logo" class="logo" />
+            </span>
+            <div class="nav-actions">
+                <select name="Language" id="language">
+                    <option value="English">English</option>
+                    <option value="हिन्दी">हिन्दी</option>
+                </select>
+                <button>Sign In</button>
+            </div>
+        </nav>
+
+        <div class="top">
+            <a href="/">Popular Now</a>
+            <a href="/">Plans</a>
+            <a href="/">Reasons to Join</a>
+            <a href="/">FAQ</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="bgcover">
+            <div class="container">
+                <h1>Unlimited movies, TV shows and more</h1>
+                <p>Starts at ₹149. Cancel at any time.</p>
+            </div>
+            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+            <div class="input">
+                <div class="control">
+                    <input type="email" placeholder="Email address" />
+                </div>
+                <div class="button">
+                    <button>Get Started </button>
+                    <img src="assets/right.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="grediant">
+            <div class="layout">
+                <div class="trending">
+                    <h2>Trending Now</h2>
+                    <div class="movies">
+                        <ul id="movies">
+                            <li>
+                                <div><img src="assets/Deva.webp" alt=""></div>
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <div><img src="assets/Pushpa2.webp" alt=""></div>
+                                <span>2</span>
+                            </li>
+                            <li>
+                                <div><img src="assets/Dragon.webp" alt=""></div>
+                                <span>3</span>
+                            </li>
+                            <li>
+                                <div><img src="assets/chhaava.webp" alt=""></div>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <div><img src="assets/Officer.webp" alt=""></div>
+                                <span>5</span>
+                            </li>
+                            <li>
+                                <div><img src="assets/Court.webp" alt=""></div>
+                                <span>6</span>
+                            </li>
+                            <li>
+                                <div><img src="assets/Test.webp" alt=""></div>
+                                <span>7</span>
+                            </li>
+                            <li>
+                                <div><img src="assets/Squid_Game.webp" alt=""></div>
+                                <span>8</span>
+                            </li>
+                            <li>
+                                <div><img src="assets/Khakee.webp" alt=""></div>
+                                <span>9</span>
+                            </li>
+                            <li>
+                                <div><img src="assets/Resident.webp" alt=""></div>
+                                <span>10</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="black_layout">
+            <div class="plans-container">
+                <h2>A plan to suit your needs</h2>
+                <div class="plans-grid">
+                    <!-- Mobile Plan -->
+                    <div class="plan-card" id="plans1">
+                        <div class="plan-header">
+                            <h3>Mobile</h3>
+                            <div class="resolution">480p</div>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Fair video quality</li>
+                            <li>✓ For your phone or tablet</li>
+                        </ul>
+                        <p class="price">₹149 /mo</p>
+                    </div>
+
+                    <!-- Basic Plan -->
+                    <div class="plan-card popular" id="plans2">
+                        <div class="popular-tag">Most Popular</div>
+                        <div class="plan-header">
+                            <h3>Basic</h3>
+                            <div class="resolution">720p</div>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Good video quality</li>
+                            <li>✓ For your phone, tablet, laptop and TV</li>
+                        </ul>
+                        <p class="price">₹199 /mo</p>
+                    </div>
+                    <!-- Standard Plan -->
+                    <div class="plan-card" id="plans3">
+                        <div class="plan-header">
+                            <h3>Standard</h3>
+                            <div class="resolution">1080p</div>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Great video quality</li>
+                            <li>✓ For your phone, tablet, laptop and TV</li>
+                        </ul>
+                        <p class="price">₹499 /mo</p>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="plan-card" id="plans4">
+                        <div class="plan-header">
+                            <h3>Premium</h3>
+                            <div class="resolution">4K + HDR</div>
+                        </div>
+                        <ul class="features">
+                            <li>✓ Best video quality</li>
+                            <li>✓ Immersive sound (spatial audio)</li>
+                            <li>✓ For your phone, tablet, laptop and TV</li>
+                        </ul>
+                        <p class="price">₹649 /mo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reason_section">
+                <h2>More reson to join</h2>
+                <div class="reason">
+                    <div class="reason_container">
+                        <h4>Enjoy on your TV</h4>
+                        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                        </p>
+                        <img src="assets/tv.svg" alt="">
+                    </div>
+                    <div class="reason_container">
+                        <h4>Download your shows to watch offline</h4>
+                        <p>Save your favourites easily and always have something to watch.</p>
+                        <img src="assets/downlod.svg" alt="">
+                    </div>
+                    <div class="reason_container" id="reason3">
+                        <h4>Watch everywhere</h4>
+                        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                        <img src="assets/pop.svg" alt="">
+                    </div>
+                    <div class="reason_container">
+                        <h4>Create profiles for kids</h4>
+                        <p>Send kids on adventures with their favourite characters in a space made just for
+                            them—free
+                            with
+                            your membership.</p>
+                        <img src="assets/profile.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="FAQ_section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="container">
+                    <div class="qns">
+                        <span>What is Netflix?</span>
+                        <span><img src="assets/plus.svg" alt=""></span>
+                    </div>
+                    <div class="qns">
+                        <span>How much does Netflix cost?</span>
+                        <span><img src="assets/plus.svg" alt=""></span>
+                    </div>
+                    <div class="qns"><span>Where can I watch?</span>
+                        <span><img src="assets/plus.svg" alt=""></span>
+                    </div>
+                    <div class="qns"><span>What is Netflix?</span>
+                        <span><img src="assets/plus.svg" alt=""></span>
+                    </div>
+                    <div class="qns"><span>What is Netflix?</span>
+                        <span><img src="assets/plus.svg" alt=""></span>
+                    </div>
+                    <div class="qns"><span>What is Netflix?</span>
+                        <span><img src="assets/plus.svg" alt=""></span>
+                    </div>
+                    <div class="input">
+                        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                        <div class="control">
+                            <input type="email" placeholder="Email address" />
+                        </div>
+                        <div class="button">
+                            <button>Get Started </button>
+                            <img src="assets/right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="phone">
+                <pre><span>Questions? Call </span></pre>
+                <a href="tel:000-800-919-1743">000-800-919-1743</a>
+            </div>
+            <div class="layout">
+                <ul class="footer_links">
+                    <li><a href="/">FAQ</a></li>
+                    <li><a href="/">Help Center</a></li>
+                    <li><a href="/">Account</a></li>
+                    <li><a href="/">Media Center</a></li>
+                    <li><a href="/">Investor Relations</a></li>
+                    <li><a href="/">Jobs</a></li>
+                    <li><a href="/">Ways to Watch</a></li>
+                    <li><a href="/">Terms of Use</a></li>
+                    <li><a href="/">Privacy</a></li>
+                    <li><a href="/">Cookie Preferences</a></li>
+                    <li><a href="/">Corporate Information</a></li>
+                    <li><a href="/">Contact Us</a></li>
+                    <li><a href="/">Speed Test</a></li>
+                    <li><a href="/">Legal Notices</a></li>
+                    <li><a href="/">Only on Netflix</a></li>
+                </ul>
+            </div>
+            <select name="Language" id="language">
+                <option value="English">English</option>
+                <option value="हिन्दी">हिन्दी</option>
+            </select>
+            <p>Netflix India</p>
+        </div>
+    </footer>
+</body>
+
+</html>
