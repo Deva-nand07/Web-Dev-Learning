@@ -1,55 +1,57 @@
-// Functions in JS
+// Tutorial on Stirng Manipulation
+
+console.log("\n")
+
+//practise qns
 {
-  // Default functions
-  console.log("\n");
-
-  console.log("deva nand".toUpperCase()); // Convert string to uppercase
-
-  array = [1, 2, 3, 4];
-  array.push(5); // Add 5 to array
-  console.log(array); // Print array
+  // let fullName = prompt("Enter your Full Name without spaces");
+  // alert(`@${fullName}${fullName.length}`);
 }
+// Two method to create string
+let str1 = "Hello World!"; // Using double quotes
+let str2 = 'Hello India!'; // Using single quotes
 
-{
-  // User defined functions
-  // function syntax
-  console.log("\n");
-  function name(params) {}
-  function greeting(Name) {
-    console.log("Hello " + Name); // Print Hello + Name
-  }
-  greeting("Deva nand"); // Call function with name Deva nand
-  greeting("Lalit"); // Call function with name Lalit
+// length of string
+console.log("Length of str1: " + str1.length); // 12
+console.log("Length of str2: " + str2.length); // 12
 
-  function add(a, b) {
-    return a + b; // Return sum of a and b
-  }
-  sum = add(10, 20); // Call function with a = 10 and b = 20
-  console.log("Sum is ", sum); // Print sum
+// Accessing string character using index
+console.log("First character of str1: " + str1[0]); // H
+console.log("Second character of str2: " + str2[1]); // e
+console.log("Last character of str1: " + str1[str1.length - 1]); // !
+console.log("Out of range character of str2: " + str2[20]); // undefined
 
-  function sub(a, b) {
-    return a - b; // Return difference of a and b
-  }
-  subtraction = sub(20); // Call function with a = 20 and b = 10
-  console.log("Subtraction is ", subtraction); // Print subtraction
-  // NaN is not a number
+// Template Literals
+const item = {
+  name: "Laptop",
+  price: 50000,
+  brand: "Dell",
+};
+console.log(
+  `Item name is ${item.name} of brand ${item.brand} and price  is ${item.price} rupees.`
+); // Item name is Laptop of brand Dell and price is 50000 rupees.
 
-  function Exponentiation(base, exponent) {
-    let result = base ** exponent; // Exponentiation
-    return result; // Return result
-  }
-  console.log("Exponentiation of 2^3 is ", Exponentiation(2, 3)); // Call function with base = 2 and exponent = 3
+// String name with double quotes
+const str3 = "Hello \"World\"!"; // Hello "World"!
+let str4 = `Hello  "India"!`;
+console.log(str3); // Hello "World"!
+console.log(str4); // Hello  "India"!
 
-  // Arrow function
-  const Addition = (a, b) => {
-    return a + b; // Return sum of a and b
-  };
-  console.log("Value of Addition (arrow function) =", Addition(18, 22)); // Call function with a = 18 and b = 22
+// String Interpolation
 
-  // functiojn with optional parameters
-  function salaryIncrement(salary, increment = 5000) {
-    return salary + increment; // Return salary + increment
-  }
-  console.log("Previous Salart of Deva nand = ", 100000, "$"); // Print salary of Deva nand
-  console.log("Updated Salary  of Deva nand", salaryIncrement(100000), "$"); // Call function with salary = 1000 and increment = 500
-}
+// String Methods
+let brand = "  Dell  ";
+console.log(brand.length); // 8
+console.log(brand.toUpperCase()); // "  DELL  "
+console.log(brand.toLowerCase()); // "  dell  " 
+console.log(brand.trim()); // "Dell" trim() removes extra spaces from start and end of string
+let firstName = "Deva nand";
+let lastName = "Kumar";
+console.log(firstName.slice(0, 4));
+console.log(firstName.concat(" ", lastName)); // "Deva nand Kumar"
+let fullName = firstName + " " + lastName;
+console.log("another way to concat: " + fullName); // "Deva nand Kumar"
+console.log(fullName.replace("a nand", " Anand")); // "Deva Anand Kumar"
+console.log(fullName.charAt(8)); // "d"
+console.log(fullName.indexOf("a")); // 3
+console.log("Type of string: " + typeof fullName); // string
