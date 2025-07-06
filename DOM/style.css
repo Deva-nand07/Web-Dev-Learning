@@ -1,0 +1,12 @@
+*{
+    background-color: rgb(180, 215, 245);
+}
+.box {
+    background-color: tan;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 75px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
